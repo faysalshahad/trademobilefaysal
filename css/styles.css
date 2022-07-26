@@ -1,0 +1,222 @@
+h2 {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-family: 'Garamond', serif;
+  font-weight: bold;
+  font-size: 2.1rem;
+}
+
+/* hastag is being used to select id properties from html*/
+#title {
+  background-color: #FFEF82;
+}
+
+/* dot is being used to select class properties from html*/
+.title-image {
+  /* Changing the Width of the image size by using percentage for responsiveness*/
+  width: 50%;
+  /* This functionality will help to tilt the image to 12 degree from right
+  hand side direction. If we use negative sign ' - ' before the 12 degree then
+  the image will rotate 12 degree towards the left hand side direction.*/
+  transform: rotate(12deg);
+  /*
+  postion: absolute;
+  right: 30%;
+  */
+}
+
+.container-fluid {
+  /* top and bottom padding is 3% and left and right padding is 15% .
+  Also it is known as vertical and horizontal padding if the specifications are
+  declared in following manner.
+  The percentage signs has been used to represent relative measurements which
+  will change according to the screen size of any device. */
+  padding: 3% 15%;
+}
+
+.TheMainHeading {
+  font-family: 'verdana', sans-serif;
+  /* rem menas root em which is less error prone and best to use it.
+  Also important note 1 em = 16 px. */
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+/* ======================Navbar Properties ==========================*/
+.navbar {
+  /* here the paddign has been added to the navbar. Top and left and right
+paddings are 0 whereas bottom padding is 2.5 rem*/
+  padding: 0 0 2.5rem;
+}
+
+.navbar-brand {
+  font-family: 'Courier New', monospace;
+  /* rem menas root em which is less error prone and best to use it.
+  Also important note 1 em = 16 px. */
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  /* Adding padding between the links in navbar such as contact, pricing
+  etcetera. Top and Bottom padding is 0 whereas left and right paddings are
+  18 px each.*/
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+}
+
+/* =========================Download Buttons ====================*/
+.Download-Buttons {
+  margin: 5% 3% 5% 0;
+}
+
+/* ==========================Featured Section =======================*/
+#features {
+  /* Padding has applied 4% to top and bottom part and 7% to left and right.*/
+  padding: 4% 7%;
+  background-color: #B4FF9F;
+  /*
+position: relative;
+z-index: 1;
+*/
+}
+
+.feature-box {
+  text-align: center;
+}
+
+.easyToUseImage {
+  height: 30%;
+  width: 20%;
+  margin-bottom: 1rem;
+  /* This will make the image looks circled as the border will be rounded.*/
+  border-radius: 100%;
+}
+
+/*
+.easyToUseImage:hover{
+  color:
+}
+
+*/
+/* ========================Testimonial Section==================*/
+#testimonials {
+  background-color: #9ADCFF;
+  text-align: center;
+}
+
+.testimonialsImage {
+  width: 20%;
+  /* This will make the image looks circled as the border will be rounded.*/
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.carousel-item {
+  /* Padding has applied 4% to top and bottom part and 7% to left and right.*/
+  padding: 7% 15%;
+}
+
+/* ==================Press Sections======================== */
+#press {
+  background-color: #9ADCFF;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.pressLogoImages {
+  width: 15%;
+  /* Here the margin properties will be 20px on top and 20px right and left and
+  50px to the bottom.*/
+  margin: 20px 20px 50px;
+}
+
+/* ================ Pricing Sections ======================== */
+#pricing {
+  /* Using padding on all sides on the pricing section. 40px on top and bottom
+side and 100px on left and right side.*/
+  padding: 40px 100px;
+  text-align: center;
+  background-color: #E2DCC8;
+}
+
+.pricing-column {
+  /*Padding has been applied to each card.
+  3% on top and bottom part of the pricing cards
+  and 2% on right side and left side of the card*/
+  padding: 3% 2%;
+}
+
+/* ================ CTA Sections ======================== */
+/* hastag is being used to select id properties from html*/
+#cta {
+  background-color: #B2A4FF;
+  /* Using padding on all sides on the pricing section. 7% on top and bottom
+  side and 15% on left and right side.*/
+  padding: 3% 15%;
+  text-align: center;
+}
+
+/* dot is being used to select class properties from html*/
+.cta-heading {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+/* ================ Footer Sections ======================== */
+#footer {
+  /* Using padding on all sides on the pricing section. 7% on top and bottom
+  side and 15% on left and right side.*/
+  padding: 3% 15%;
+  text-align: center;
+  background-color: #FFF9CA;
+}
+
+/*the following code has been created automatically by using the website called
+CSS Button Genrator to create beautiful button.
+https://css3buttongenerator.com/*/
+/*
+The @media rule is used in media queries to apply different styles for different
+media types/devices.
+
+Media queries can be used to check many things, such as:
+
+width and height of the viewport
+width and height of the device
+orientation (is the tablet/phone in landscape or portrait mode?)
+resolution
+Using media queries are a popular technique for delivering a tailored style
+sheet (responsive web design) to desktops, laptops, tablets, and mobile phones.
+
+You can also use media queries to specify that certain styles are only for
+printed documents or for screen readers (mediatype: print, screen, or speech).
+
+In addition to media types, there are also media features. Media features
+provide more specific details to media queries, by allowing to test for a
+specific feature of the user agent or display device. For example, you can apply
+styles to only those screens that are greater, or smaller, than a certain width.
+*/
+@media (max-Width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    /* Changing the image postion to static.*/
+    position: static;
+    /* rotating the image postion to straight from the tilted style.*/
+    transform: rotate(0);
+  }
+}

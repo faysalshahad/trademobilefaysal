@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TradeMobile</title>
+
+  <!-- These following font links has been generated from fonts.google.
+website and the CSS rules will be
+font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu', sans-serif;  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet">
+
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!--This following link is our own custom CSS link. The rules in HTML are if
+there are more than one css stylesheet available for the html page to load then
+html will give priority to the last one. In this case all the bootstrap CSS
+elements will be uploaded to our website but if we override or change some of
+the properties inside our own CSS file then Html will give priority to our CSS
+file's modification. It will only happen when we will put our custom CSS file
+  at the very end of all other CSS file.-->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!--Favicon icon for the browser -->
+  <link rel="icon" href="faviconTradeMobile.ico">
+
+
+</head> <!-- Head ends -->
+
+<body>
+
+  <section id="title">
+
+    <div class="container-fluid">
+
+
+
+      <!-- Nav Bar Begins -->
+
+      <!--
+    To choose navbar properties and different options available at bootstrap
+    please visit the following link:
+    https://getbootstrap.com/docs/5.1/components/navbar/
+    To choose navbar or button colour properties and different options available
+    at bootstrap please visit the following link:
+    https://getbootstrap.com/docs/5.1/components/buttons/
+    To choose margin and padding properties and different options available
+    at bootstrap please visit the following link:
+
+    https://getbootstrap.com/docs/5.1/utilities/spacing/
+    -->
+      <!--Calling class called navbar navbar-expand-lg. Here lg represent
+     the navbar properties will primarily work for large laptop or desktop screen.
+     class called navbar-dark represents the navbar text options colour whereas
+     bg-dark (just after navbar-dark) represents the navbar background colour.
+     In this case we have taken off bg-dark from the property so that our navbar
+     can blend in with the default background colour of our website.-->
+      <nav class="navbar navbar-expand-lg navbar-light">
+
+        <img src="images/smartphoneIcon.png" alt="" width="50" height="50">
+        <!--Here the TinDog word is being influenced by the class called navbar-brand -->
+        <a class="navbar-brand" href="">TradeMobile</a>
+
+
+        <!--This button being created to represent hamburger menu while the
+      website will be viewed in smaller screensize like tablet or mobile phone.
+      links contatining description of this bootstrap property can accessed via
+      navbar toggler section in bootstrap website:
+      https://getbootstrap.com/docs/5.1/components/navbar/#toggler
+      -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Here the id named "navbarTogglerDemo01" has been taken from the same
+      name mentioned in the button above -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <!-- Here the class called "ms-auto" is being used to push the list items
+      to the right hand side whereas the Navbar-brand "TinDog" can stay at the
+      left side of the navbar.-->
+          <ul class="navbar-nav ms-auto">
+            <!-- Each of the list items of the navbar has been listed below. -->
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Download</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Nav Bar Ends -->
+
+      <!-- Title -->
+
+      <div class="row">
+        <!-- Here class="col-lg-6" means in bootstrap each screen can have 12
+    colums at any given time. col-6 means 12/6 = 2. SO only 2 columns can be
+  displayed at the same time. 12/4 = 3 means only 3 clolumn can be displayed
+at the same time. 12/2 means 6 column can be displayed at the same time.
+col-lg-6 means 2 columns will displayed when the screen realestate is in laptop
+or desktop mode or in larger screen. we have not sepcified for md (tablet mode)
+or sm (smarthphone mode). So automatically the browser will display the items
+in one column mode. So single item will be displayed in one column when the
+browser will detect the screen size is in tablet or smartphone mode.-->
+        <div class="col-lg-6">
+          <h1 class="TheMainHeading">Trade Your Smartphones with Others</h1>
+          <!-- this class called class="btn btn-dark" and
+          class="btn btn-outline-danger" has been copied from the Bootstrap
+        website difrectly.
+         https://getbootstrap.com/docs/5.1/components/buttons/
+       btn -lg will be used for creating larger size button.
+
+ -->
+          <button type="button" class="btn btn-dark btn-lg Download-Buttons">iOS Download</button>
+          <button type="button" class="btn btn-outline-danger btn-lg Download-Buttons">Google Play Download</button>
+        </div>
+
+
+        <div class="col-lg-6">
+          <img class="title-image" src="images/buyandsellSmartphones.png" alt="iphone-mockup">
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features">
+
+    <!--Without declaring the **** <div class="row"> **** the following div
+  classes such as *** col-lg-4 *** in bootstrap will not work. In order to
+divide the columns in different div sections such as col-lg-4 or col-lg-6,
+we need to nest all those div sections under one div class called
+**** <div class="row"> **** . Only then the code will start working.
+This procedures must needed to be followed wile using bootstrap.-->
+    <div class="row">
+
+      <!-- Here class="col-lg-4" means in bootstrap each screen can have 12
+  colums at any given time. col-4 means 12/4 = 3. So only 2 columns can be
+  displayed at the same time. 12/4 = 3 means only 3 clolumn can be displayed
+  at the same time. 12/2 means 6 column can be displayed at the same time.
+  col-lg-6 means 2 columns will displayed when the screen realestate is in laptop
+  or desktop mode or in larger screen. we have not sepcified for md (tablet mode)
+  or sm (smarthphone mode). So automatically the browser will display the items
+  in one column mode. So single item will be displayed in one column when the
+  browser will detect the screen size is in tablet or smartphone mode.-->
+      <div class="feature-box col-lg-4">
+
+        <img class="easyToUseImage" src="images/easyIcon.png" alt="Easy Icon Image">
+
+        <h3>Easy to use.</h3>
+        <p>So easy to use that people from all different ages and backgrounds
+          are using our service.</p>
+
+      </div>
+
+      <div class="feature-box col-lg-4">
+
+        <img class="easyToUseImage" src="images/perfectIcon.png" alt="Easy Icon Image">
+
+        <h3>Elite Clientele</h3>
+        <p>We have all types of phones. From the best and
+          expensive phones to budget friendly phones.</p>
+
+      </div>
+
+      <div class="feature-box col-lg-4">
+
+        <img class="easyToUseImage" src="images/guranteeIcon.jpg" alt="Easy Icon Image">
+
+        <h3>Guaranteed to work.</h3>
+        <p>We gurantee all phones are in excellent working condition or you
+          can get your money back anytime.</p>
+
+      </div>
+
+    </div>
+
+
+
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+
+    <div id="testimonialCarouselControls" class="carousel slide" data-bs-interval="3000" data-bs-ride="false" data-bs-pause='hover' data-bs-touch="true">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>I have found the latest iPhone on TradeMobile.</h2>
+          <img class="testimonialsImage" src="images/uchihaItachi.jpg" alt="dog-profile">
+          <em>Itachi, New York</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">My daughter found the latest Samsung phone on TradeMobile.</h2>
+          <img class="testimonialsImage" src="images/hatakeKakashi.jpg" alt="lady-profile">
+          <em>Kakashi, Illinois</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">My son got OnePlus phones from TradeMobile.</h2>
+          <img class="testimonialsImage" src="images/narutoUzumaki.jpg" alt="lady-profile">
+          <em>Naruto, San Fransisco</em>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarouselControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarouselControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
+
+
+  </section>
+
+
+  <!-- Press -->
+
+  <section id="press">
+    <img class="pressLogoImages" src="images/techcrunch.png" alt="tc-logo">
+    <img class="pressLogoImages" src="images/tnw.png" alt="tnw-logo">
+    <img class="pressLogoImages" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="pressLogoImages" src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+
+    <h2>A Phone Plan for Everyone's Needs</h2>
+    <p>Simple and affordable price plans for your monthly phone budget.</p>
+
+
+    <!-- bootstrap row class to arrange the cards in a group format. -->
+    <div class="row">
+
+      <!-- Here <div class="col-lg-4 col-md-6"> is representing the grid size.
+col-lg-4 represnets the laptop or desktop size. number 4 means maximum 3 card
+will be displayed u=in one row. Each row can be divided into 12 grid. !2 divided
+by 4 is equal to 3 card maximum.
+col-md-6 represents the tablet or ipad sizes. Each row will represent only 2 cards
+since 12 divided by 6 is equal to 2 cards only per row.-->
+
+      <div class="pricing-column col-lg-4 col-md-6">
+
+        <!-- card border class represents the border colour of each card which has been
+customized separately. -->
+        <div class="card border-danger">
+
+          <div class="card-header">
+            <h3>Economy</h3>
+
+          </div>
+
+          <!-- card body class represents the contents inside each card where the
+    text colour has been customized separately. -->
+          <div class="card-body text-primary">
+
+            <h2>£10 Pound</h2>
+            <p>100 Talktime Minutes</p>
+            <p>100 Messages</p>
+            <p>1GB Internet</p>
+
+            <!-- here inside the button class="btn btn-lg col-12 btn-success" means
+    btn soze will be large and col-12 represent the button will take up the
+  entire width size in each card and the color of the each button has been
+customized separately. -->
+            <button class="btn btn-lg col-12 btn-primary" type="button">Sign Up</button>
+
+          </div>
+          <div class="card-footer">
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Here <div class="col-lg-4 col-md-6"> is representing the grid size.
+col-lg-4 represnets the laptop or desktop size. number 4 means maximum 3 card
+will be displayed u=in one row. Each row can be divided into 12 grid. !2 divided
+by 4 is equal to 3 card maximum.
+col-md-6 represents the tablet or ipad sizes. Each row will represent only 2 cards
+since 12 divided by 6 is equal to 2 cards only per row.-->
+
+      <div class="pricing-column col-lg-4 col-md-6">
+
+        <!-- card border class represents the border colour of each card which has been
+  customized separately. -->
+        <div class="card border-info">
+
+          <div class="card-header">
+
+            <h3>Premium</h3>
+
+          </div>
+
+          <!-- card body class represents the contents inside each card where the
+    text colour has been customized separately. -->
+          <div class="card-body text-success">
+
+
+            <h2>£30 Pound</h2>
+            <p>1000 Talktime Minutes</p>
+            <p>1000 Messages</p>
+            <p>15GB Internet</p>
+
+            <!-- here inside the button class="btn btn-lg col-12 btn-success" means
+    btn soze will be large and col-12 represent the button will take up the
+  entire width size in each card and the color of the each button has been
+customized separately. -->
+            <button class="btn btn-lg col-12 btn-success" type="button">Sign Up</button>
+
+          </div>
+          <div class="card-footer">
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Here <div class="col-lg-4 col-md-6"> is representing the grid size.
+col-lg-4 represnets the laptop or desktop size. number 4 means maximum 3 card
+will be displayed u=in one row. Each row can be divided into 12 grid. !2 divided
+by 4 is equal to 3 card maximum.
+col-md-12 represents the tablet or ipad sizes. Each row will represent only 1 card
+since 12 divided by 12 is equal to 1 cards only per row.-->
+
+      <div class="pricing-column col-lg-4 col-md-12">
+
+        <!-- card border class reprents the border colour of each card which has been
+  customized separately. -->
+        <div class="card border-warning">
+
+          <div class="card-header">
+
+            <h3>Exclusive</h3>
+
+          </div>
+
+          <!-- card body class represents the contents inside each card where the
+    text colour has been customized separately. -->
+          <div class="card-body text-danger">
+
+
+            <h2>£50 Pound</h2>
+            <p>Unlimited Talktime Minutes</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited Internet</p>
+            <p>Exclusive Membership Card</p>
+            <p>Yearly Special Discounts and Bonuses</p>
+
+            <!-- here inside the button class="btn btn-lg col-12 btn-success" means
+    btn soze will be large and col-12 represent the button will take up the
+  entire width size in each card and the color of the each button has been
+customized separately. -->
+            <button class="btn btn-lg col-12 btn-danger" type="button">Sign Up</button>
+
+          </div>
+          <div class="card-footer">
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <h3 class="cta-heading">Find out Your Favourite Deal Today.</h3>
+    <button type="button" class="btn btn-dark btn-lg Download-Buttons">iOS Download</button>
+    <button type="button" class="btn btn-outline-danger btn-lg Download-Buttons">Google Play Download</button>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+
+    <!--
+    <p>© Copyright TinDog</p>
+  -->
+    <div class="contact-me">
+      <h2>Get In Touch</h2>
+      <h3>Please visit my LinkedIn Profile.</h3>
+      <a class="ContactMebutton" href="https://www.linkedin.com/in/md-faysal-shahad-b565b5162/">
+        <button type="button" class="btn btn-outline-primary btn-lg Download-Buttons">
+          LinkedIn Profile </button>
+      </a>
+
+      <h3>Email Me:</h3>
+      <a class="ContactMebutton" href="mailto:faysalshahad@gmail.com">
+        <button type="button" class="btn btn-outline-danger btn-lg Download-Buttons">
+          Contact MD Faysal Shahad</button>
+      </a>
+
+    </div>
+
+    <div class="copyrightParagraph">
+
+
+
+      <p>© Copyright <b> MD FAYSAL SHAHAD.</b> <br> <span id="displayDateTime"> </span> </p>
+
+      <script type="text/javascript">
+        var today = new Date();
+        var day = today.getDay();
+        var daylist = ["Sunday", "Monday", "Tuesday", "Wednesday ", "Thursday", "Friday", "Saturday"];
+        var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
+        //var time = today.getHours() + ":" + today.getMinutes() ":" + today.getSeconds();
+        //var dateTime = date+' '+time;
+        var dateTime = date;
+        document.getElementById("displayDateTime").innerHTML = dateTime + ' , ' + daylist[day] + '.';
+      </script>
+
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
